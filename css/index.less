@@ -1,0 +1,105 @@
+// 导入 common.less 文件
+@import "common.less";
+
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background-color: whitesmoke;
+}
+
+@baseFont: 50;
+
+// search-box
+.search-box {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: (88rem / @baseFont);
+  background-color: #ffc001;
+
+  .menu {
+    width: (44rem / @baseFont);
+    height: (70rem / @baseFont);
+    margin: (11rem / @baseFont) (25rem / @baseFont) (7rem / @baseFont) (24rem / @baseFont);
+
+    img {
+      width: (44rem / @baseFont);
+      height: (70rem / @baseFont);
+    }
+  }
+
+  .search {
+    flex: 1;
+
+    input {
+      width: 100%;
+      height: (60rem / @baseFont);
+      border: 0;
+      outline: 0;
+      border-radius: (33rem / @baseFont);
+      background-color: #fff1c9;
+      padding-left: (50rem / @baseFont);
+      font-size: (25rem / @baseFont);
+      color: #666
+    }
+
+    // 去掉input有点的 小叉叉（清空按钮）
+    input::-webkit-search-cancel-button {
+      display: none;
+    }
+
+  }
+
+  .login {
+    width: (75rem / @baseFont);
+    height: (70rem / @baseFont);
+    margin: (10rem / @baseFont);
+    text-align: center;
+
+    img {
+      width: (45rem / @baseFont);
+      height: (70rem / @baseFont);
+
+    }
+  }
+}
+
+// bannner
+.banner {
+  width: 100%;
+  height: 100%;
+  margin-top: (88rem / @baseFont);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// nav
+nav {
+  width: (750rem / @baseFont);
+
+  a {
+    float: left;
+    width: (150rem / @baseFont);
+    height: (140rem / @baseFont);
+    font-size: (22rem / @baseFont);text-align: center;
+    color: #666;
+
+    img {
+      width: (84rem / @baseFont);
+    }
+
+    span {
+      display: block;
+
+    }
+  }
+}
